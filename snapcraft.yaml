@@ -1,0 +1,17 @@
+name: cjwatson-test-godd
+version: 1.0
+summary: Simple dd like tool
+description:
+ Written in go with support for device auto-detection via libgudev,
+ you would need to use hw-assign to access devices.
+
+apps:
+  cjwatson-test-godd:
+    command: bin/godd
+
+parts:
+  cjwatson-test-godd:
+    plugin: go
+    source: https://github.com/mvo5/godd
+    source-type: git
+    build-packages: [gcc, libgudev-1.0-dev]
