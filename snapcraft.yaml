@@ -1,4 +1,4 @@
-name: cjwatson-test-godd
+name: cjwatson-test-godd-unregistered
 version: 1.0
 summary: Simple dd like tool
 description:
@@ -6,11 +6,11 @@ description:
  you would need to use hw-assign to access devices.
 
 apps:
-  cjwatson-test-godd:
+  cjwatson-test-godd-unregistered:
     command: bin/godd
 
 parts:
-  cjwatson-test-godd:
+  cjwatson-test-godd-unregistered:
     plugin: go
     source: https://github.com/mvo5/godd
     source-type: git
